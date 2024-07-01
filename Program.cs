@@ -190,6 +190,122 @@ namespace CelMaiMicNumar
 
 
            
+namespace ProgramPicnic
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Scrie un program care sa preia 2 nr de la utilizator si sa permita utilizatorului sa aleaga o operatie aritmetica
+            // pt a fi efectuata cu cele 2 numere.
+            // operatiile disponibile: adunare, scadere, inmultire, impartire.
+            // Programul va afisa rezultatul ales de utilizator.
+
+            // Ce stim:
+            // - operatiile disponibile:
+            // - cele 2 numere sunt introduse de utilizator.
+            // - operatia aritmetica va fi aleasa de utilizator.
+
+            // Ce nu stim:
+            // - ce numere va introduce utilizatorul.
+            // - ce operatie aritmetica va alege din optiunile oferite.
+
+            // Algoritm:
+
+            // declaram variabilele:
+            // numar1 si numar2
+            // operatiaAritmetica
+
+            // mesaj pt utilizator sa introduca primul numar.
+            // codul specific.
+
+            // mesaj pt utilizator sa introduca al doilea numar.
+            // codul specific.
+
+            // mesaj pentru utilizator in care cerem sa aleaga optiunea dorita.
+
+            // prezentarea optiunilor de operatii utilizatorului intr-un menu.
+            // pt a evita ca utilizatorul nu poate in acest caz sa introduca "stringuri" de la tastatura pt optiuni ("adunare", "scadere"...etc),
+            // vom nota fiecare optiune cu un numar de la 1 la 4.
+
+            // declararea variabilei "optiune" , de tip "int" si pe care o vom folosi in structuri decizionale.
+            // declararea variabilei "optiuneValida" de tip bool pe care o vom folosi in structuri decizionale, 
+            // pt a evita introducerea de catre utilizator a unui alt numar decat cele din menu.
+            // declaram variabila "rezultat" , de tip double pt a o folosi in structuri decizionale.
+            // mesaj final daca optiunea este valida, mesaj ce indica succesul operatiei alese sau insuccesul daca numarul 2 este egal cu 0.
+
+
+
+            double numar1, numar2;
+            double operatieAritmetica;
+
+            Console.WriteLine("Introduceti primul numar ");
+            numar1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Introduceti al doilea numar ");
+            numar2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Alegeti operatia aritmetica ");
+
+            Console.WriteLine("1.Adunare");
+            Console.WriteLine("2.Scadere");
+            Console.WriteLine("3.Inmultire");
+            Console.WriteLine("4.Impartire");
+
+            int optiune = int.Parse(Console.ReadLine());
+
+            bool optiuneValida = true;
+
+            double rezultat = 0;
+
+            if (optiune == 1)
+            {
+                rezultat = numar1 + numar2;
+                Console.WriteLine($"Rezultatul adunarii este:  {rezultat}");
+            }
+            else if (optiune == 2)
+            {
+                rezultat = numar1 - numar2;
+                Console.WriteLine($"Rezultat scaderii este:  {rezultat}");
+            }
+            else if (optiune == 3)
+            {
+                rezultat = numar1 * numar2;
+                Console.WriteLine($"Rezultatul inmultirii este: {rezultat}");
+            }
+            else if (optiune == 4)
+            {
+                if (numar2 != 0)
+                {
+                    rezultat = numar1 / numar2;
+                    Console.WriteLine($"Rezultatul impartirii este: {rezultat}");
+                }
+                else
+                {
+                    Console.WriteLine("Operatiunea invalida.Nu se poate imparti la 0");
+                }
+            }
+            else
+            {
+                optiuneValida = false;
+                Console.WriteLine("Optiune invalida. Va rugam sa selectati o operatiune de la 1 la 4.");
+            }
+
+            if (optiuneValida && numar2 != 0)
+            {
+                Console.WriteLine("Operatiunea a fost realizata cu succes!");
+
+            }
+            else if (optiuneValida && numar2 == 0)
+            {
+                Console.WriteLine("Operatiunea nu a putut fi realizata.");
+            }
+        }
+    }
+}
+
+
+
 
 
 
