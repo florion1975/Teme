@@ -61,8 +61,13 @@ namespace TemeDeCasa
             Console.Write("Rezultatul este: ");
             Console.WriteLine(MediaAritmetica);
 
+        }
+    }
 
-        using System;
+}
+        
+
+ using System;
 
 namespace CelMaiMicNumar 
 {
@@ -151,6 +156,39 @@ namespace CelMaiMicNumar
     }
 }
 
+ // calculul volumului casutei lui Pluto
+
+ double lungime, latime, inaltime, volum;
+ string textVolum = "Volumul este: ";
+ string unitateMasura = " metri cubi";
+
+ Console.WriteLine("Introduce lungimea");
+ lungime = double.Parse(Console.ReadLine());
+
+ Console.WriteLine("Introduce latimea");
+ latime = double.Parse(Console.ReadLine());
+
+ Console.WriteLine("introduce inaltimea");
+ inaltime = double.Parse(Console.ReadLine());
+
+ volum = lungime * latime * inaltime;
+
+ if (lungime > 0 && latime > 0 && inaltime > 0)
+ {
+     Console.WriteLine(textVolum + volum + unitateMasura);
+     Console.WriteLine("Operatiunea s-a realizat cu succes");
+ }
+ else if (lungime == 0 || latime == 0 || inaltime == 0)
+ {
+     Console.WriteLine("Nu puteti introduce valoarea 0");
+     Console.WriteLine("Factori invalizi. Operatia nu s-a putut efectua");
+ } else 
+ {
+     Console.WriteLine("Nu puteti introduce numere negative");
+     Console.WriteLine("Factori invalizi. Operatia nu s-a putut efectua");
+ }
+
+
            
 
 
@@ -160,7 +198,4 @@ namespace CelMaiMicNumar
 
 
 
-        }
-    }
 
-}
