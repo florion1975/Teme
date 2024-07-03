@@ -300,6 +300,60 @@ namespace ProgramPicnic
             {
                 Console.WriteLine("Operatiunea nu a putut fi realizata.");
             }
+
+            
+            //double y, x, calculN;
+
+            //Console.WriteLine("Introduceti y");
+            //y = double.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Introduceti x");
+            //x = double.Parse(Console.ReadLine());
+
+            //calculN = y / x;
+
+            //if (calculN > 0 && x != 0 && y > 0 && x > 0)
+            //{
+            //    Console.WriteLine($"Valoarea lui N este: {calculN}");
+            //}
+            //else if (x == 0)
+            //{
+            //    Console.WriteLine("Impartirea la 0 este o eroare");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Eroare! Date introduse, invalide in raport cu operatia. " +
+            //        "Introduceti doar valori pozitive ");
+            //}
+
+
+            // Aplicatia 2:
+
+            //double numarAniAna, numarAniMihai, rezultat1, rezultat2;
+
+            //Console.WriteLine("Introduceti varsta Anei");
+            //numarAniAna = double.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Introduceti varsta lui Mihai");
+            //numarAniMihai = double.Parse(Console.ReadLine());
+
+            //rezultat1 = numarAniAna - numarAniMihai;
+            //rezultat2 = numarAniMihai - numarAniAna;
+
+
+            //if (numarAniAna > numarAniMihai && rezultat1 == rezultat2)
+            //{
+              
+            //    Console.WriteLine("Ana este mai mare decat Mihai cu  " + rezultat1 + " ani.");
+            //}
+            //else if (numarAniMihai > numarAniAna)
+            //{
+            //    Console.WriteLine("Mihai este mai mare decat Ana cu  " + rezultat2 + " ani.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Varstele sunt egale");
+            //}
         }
     }
 }
