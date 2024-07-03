@@ -354,6 +354,68 @@ namespace ProgramPicnic
             //{
             //    Console.WriteLine("Varstele sunt egale");
             //}
+
+            // TEME ,EXE2 SI 3
+
+             // Exe 2:
+
+ //double lungime, latime, inaltime, mediaAritmetica;
+ //int impartitor;
+ //string mesajText;
+
+
+ //Console.WriteLine("Introduceti lungimea");
+ //lungime = double.Parse(Console.ReadLine());
+
+ //Console.WriteLine("Introduceti latimea");
+ //latime = double.Parse(Console.ReadLine());
+
+ //Console.WriteLine("Introduceti inaltimea");
+ //inaltime = double.Parse(Console.ReadLine());
+
+ //impartitor = 3;
+ //mesajText = "Media aritmetica este:";
+ //mediaAritmetica = (lungime + latime + inaltime) / 3;
+
+
+ //if (mediaAritmetica > 0 && lungime > 0 && latime > 0 && inaltime > 0)
+ //{
+ //    Console.WriteLine(mesajText + mediaAritmetica);
+ //}
+ //else if (lungime < 0 || latime < 0 || inaltime < 0)
+ //{
+
+ //    Console.WriteLine("Operatie incorecta. Dimensiunile nu pot fi negative");
+ //}
+ //else if (lungime == 0 || latime == 0 || inaltime == 0)
+ //{
+ //    Console.WriteLine("Dimensiunile nu pot fi egale cu 0");
+ //}
+
+
+ // exe 3:  
+
+
+ //string mesajText;
+ //int numarMagic, ultimaCifra;
+
+ //Console.WriteLine("Introduceti numarul Magic");
+ //numarMagic = int.Parse(Console.ReadLine());
+
+ //ultimaCifra = numarMagic%10;
+ //mesajText = "Ultima cifra este:";
+
+ //if (numarMagic > 10)
+ //{
+ //    Console.WriteLine(mesajText + ultimaCifra);
+ //}
+ //else 
+ //{
+ //    Console.WriteLine("operatie imposibila");
+ //}
+ // Am pus conditia nrMagic > 10 pt a avea cifra zecilo si a unitatilor altfel cum extragem modulo 10?
+
+
         }
     }
 }
