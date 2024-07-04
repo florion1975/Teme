@@ -413,8 +413,70 @@ namespace ProgramPicnic
  //{
  //    Console.WriteLine("operatie imposibila");
  //}
- // Am pus conditia nrMagic > 10 pt a avea cifra zecilo si a unitatilor altfel cum extragem modulo 10?
+ // Am pus conditia nrMagic > 10 pt a avea cifra zecilor si a unitatilor, altfel cum extragem modulo 10?
 
+
+
+
+            // Aplicatia 1:
+
+            
+            double volumActivare, volumRecipient, numarVolumeRecipient;
+
+            Console.WriteLine("Introduceti cantitatea necesara pentru activarea vasului");
+            volumActivare = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Introduceti cantitatea in litri continuta de un recipient");
+            volumRecipient = double.Parse(Console.ReadLine());
+
+            numarVolumeRecipient = volumActivare / volumRecipient;
+
+            if (numarVolumeRecipient > 0 && volumActivare != 0 && volumActivare > 0 && volumRecipient > 0)
+            {
+                Console.WriteLine($"Numarul de volume necesar pentru atingerea cantitatii necesare activarii este: {numarVolumeRecipient}");
+            }
+            else if (volumRecipient == 0)
+            {
+                Console.WriteLine("Impartirea la 0 este o eroare");
+            }
+            else
+            {
+                Console.WriteLine("Eroare! Date introduse, invalide in raport cu operatia. " +
+                    "Introduceti doar valori pozitive ");
+            }
+
+
+            Aplicatia 2:
+
+            double numarAniAna, numarAniMihai, rezultat1, rezultat2;
+
+            Console.WriteLine("Introduceti varsta Anei");
+            numarAniAna = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Introduceti varsta lui Mihai");
+            numarAniMihai = double.Parse(Console.ReadLine());
+
+            rezultat1 = numarAniAna - numarAniMihai;
+            rezultat2 = numarAniMihai - numarAniAna;
+
+
+            if (numarAniAna > numarAniMihai && rezultat1 == rezultat2)
+            {
+
+                Console.WriteLine("Ana este mai mare decat Mihai cu  " + rezultat1 + " ani.");
+            }
+            else if (numarAniMihai > numarAniAna)
+            {
+                Console.WriteLine("Mihai este mai mare decat Ana cu  " + rezultat2 + " ani.");
+            }
+            else if (numarAniAna <= 0 && numarAniMihai <= 0)
+            {
+                Console.WriteLine("Varsta nu poate fi negativa sau egala cu 0.");
+            }
+            else if (numarAniAna == numarAniMihai)
+            {
+                Console.WriteLine("Varstele sunt egale");
+            }
 
         }
     }
