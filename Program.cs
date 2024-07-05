@@ -196,6 +196,9 @@ namespace ProgramPicnic
     {
         static void Main(string[] args)
         {
+
+            // // Exercitiu lucrat in echipa
+                
             // Scrie un program care sa preia 2 nr de la utilizator si sa permita utilizatorului sa aleaga o operatie aritmetica
             // pt a fi efectuata cu cele 2 numere.
             // operatiile disponibile: adunare, scadere, inmultire, impartire.
@@ -302,62 +305,63 @@ namespace ProgramPicnic
             }
 
             
-            //double y, x, calculN;
+           
 
-            //Console.WriteLine("Introduceti y");
-            //y = double.Parse(Console.ReadLine());
+            // // TEME - exe 1, exe 2, exe 3 si exe 4
 
-            //Console.WriteLine("Introduceti x");
-            //x = double.Parse(Console.ReadLine());
-
-            //calculN = y / x;
-
-            //if (calculN > 0 && x != 0 && y > 0 && x > 0)
-            //{
-            //    Console.WriteLine($"Valoarea lui N este: {calculN}");
-            //}
-            //else if (x == 0)
-            //{
-            //    Console.WriteLine("Impartirea la 0 este o eroare");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Eroare! Date introduse, invalide in raport cu operatia. " +
-            //        "Introduceti doar valori pozitive ");
-            //}
+ // // Exe 1:
 
 
-            // Aplicatia 2:
+// Console.WriteLine("Introduceti lungimea");
+// double lungime = double.Parse(Console.ReadLine());
 
-            //double numarAniAna, numarAniMihai, rezultat1, rezultat2;
+// Console.WriteLine("Introduceti latimea");
+// double latime = double.Parse(Console.ReadLine());
 
-            //Console.WriteLine("Introduceti varsta Anei");
-            //numarAniAna = double.Parse(Console.ReadLine());
-
-            //Console.WriteLine("Introduceti varsta lui Mihai");
-            //numarAniMihai = double.Parse(Console.ReadLine());
-
-            //rezultat1 = numarAniAna - numarAniMihai;
-            //rezultat2 = numarAniMihai - numarAniAna;
+// Console.WriteLine("Introduceti inaltimea");
+// double inaltime = double.Parse(Console.ReadLine());
 
 
-            //if (numarAniAna > numarAniMihai && rezultat1 == rezultat2)
-            //{
-              
-            //    Console.WriteLine("Ana este mai mare decat Mihai cu  " + rezultat1 + " ani.");
-            //}
-            //else if (numarAniMihai > numarAniAna)
-            //{
-            //    Console.WriteLine("Mihai este mai mare decat Ana cu  " + rezultat2 + " ani.");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Varstele sunt egale");
-            //}
+// double calculVolum = (lungime * latime * inaltime);
 
-            // TEME - exe2, exe3 si exe 4
+// Console.Write("Rezultatul este: ");
+// Console.WriteLine(calculVolum);
 
-             // Exe 2:
+
+// calculul volumului casutei lui Pluto
+
+//double lungime, latime, inaltime, volum;
+//string textVolum = "Volumul este: ";
+//string unitateMasura = " metri cubi";
+
+//Console.WriteLine("Introduce lungimea");
+//lungime = double.Parse(Console.ReadLine());
+
+//Console.WriteLine("Introduce latimea");
+//latime = double.Parse(Console.ReadLine());
+
+//Console.WriteLine("introduce inaltimea");
+//inaltime = double.Parse(Console.ReadLine());
+
+//volum = lungime * latime * inaltime;
+
+//if (lungime > 0 && latime > 0 && inaltime > 0)
+//{
+//Console.WriteLine(textVolum + volum + unitateMasura);
+//    Console.WriteLine("Operatiunea s-a realizat cu succes");
+//}
+//else if (lungime == 0 || latime == 0 || inaltime == 0)
+//{
+//    Console.WriteLine("Nu puteti introduce valoarea 0");
+//    Console.WriteLine("Factori invalizi. Operatia nu s-a putut efectua");
+//} else 
+//{
+//    Console.WriteLine("Nu puteti introduce numere negative");
+//    Console.WriteLine("Factori invalizi. Operatia nu s-a putut efectua");
+//}
+           
+
+// // Exe 2:
 
  //double lungime, latime, inaltime, mediaAritmetica;
  //int impartitor;
@@ -393,7 +397,7 @@ namespace ProgramPicnic
  //}
 
 
- // exe 3:  
+ // // exe 3:  
 
 
  //string mesajText;
@@ -416,7 +420,7 @@ namespace ProgramPicnic
  // Am pus conditia nrMagic > 10 pt a avea cifra zecilor si a unitatilor, altfel cum extragem modulo 10?
 
 
- // exe 4:
+ // // exe 4:
 
 
  string mesajText;
@@ -507,16 +511,12 @@ namespace ProgramPicnic
             {
                 Console.WriteLine("Varstele sunt egale");
             }
-
         }
     }
 }
 
 
-
-
-
-
+ 
 
 
 
