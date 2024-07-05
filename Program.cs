@@ -355,7 +355,7 @@ namespace ProgramPicnic
             //    Console.WriteLine("Varstele sunt egale");
             //}
 
-            // TEME ,EXE2 SI 3
+            // TEME - exe2, exe3 si exe 4
 
              // Exe 2:
 
@@ -414,6 +414,36 @@ namespace ProgramPicnic
  //    Console.WriteLine("operatie imposibila");
  //}
  // Am pus conditia nrMagic > 10 pt a avea cifra zecilor si a unitatilor, altfel cum extragem modulo 10?
+
+
+ // exe 4:
+
+
+ string mesajText;
+ int numarIntrodus, numar1, numar2, rezultat;
+
+ Console.WriteLine("Introduceti un numar format din 2 cifre");
+ numarIntrodus = int.Parse(Console.ReadLine());
+
+ // Aflam numarul 1
+ numar1 = numarIntrodus / 10;
+
+ // Aflam numarul 2
+ numar2 = numarIntrodus % 10;
+
+ // Calculam numarul magic
+ rezultat = numar1 + numar2;
+
+ 
+
+ if ( numarIntrodus > 10 && numarIntrodus < 99 )
+ {    
+       Console.WriteLine($"Numarul Magic este : {rezultat}");
+ }
+ else 
+ {
+       Console.WriteLine("Operatia nu corespunde cerintei initiale");
+ }
 
 
 
