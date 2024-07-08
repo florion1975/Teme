@@ -511,6 +511,67 @@ namespace ProgramPicnic
             {
                 Console.WriteLine("Varstele sunt egale");
             }
+
+
+            // Proiect Personal
+            
+ double lungimeTotalaTronson, lungimeTronsonSegmenti, lungimeTronsonRamasa,
+ lungimeSegment, fragmentSegmentUtilizat, numarTotalSegmentiUtilizati, distantaIntreTraverse, numarTraverse,
+ fragmentSegmentRamas, numarTotalFragmentSegmentUtilizat, numarFragmentSegmentUtilizat, numarTotalFragmentSegmenttRamas;
+ 
+ int numarSegmenti;            
+
+ Console.WriteLine("Introduceti lungimea Tronsonului");
+ lungimeTotalaTronson = double.Parse(Console.ReadLine());
+
+ Console.WriteLine("Introduceti lungime segment");
+ lungimeSegment = double.Parse(Console.ReadLine());
+
+ Console.WriteLine("Introduceti distanta intre traverse");
+ distantaIntreTraverse = double.Parse(Console.ReadLine());
+ 
+
+ numarSegmenti = (int)(lungimeTotalaTronson / lungimeSegment);
+ lungimeTronsonSegmenti = (int)(numarSegmenti * lungimeSegment);
+ lungimeTronsonRamasa = lungimeTotalaTronson - numarSegmenti * lungimeSegment;
+ fragmentSegmentUtilizat = lungimeTronsonRamasa;
+ numarFragmentSegmentUtilizat = lungimeTronsonRamasa / fragmentSegmentUtilizat;
+ numarSegmenti = (int)(lungimeTotalaTronson / lungimeSegment);
+ fragmentSegmentRamas = lungimeSegment - fragmentSegmentUtilizat;
+ numarTotalSegmentiUtilizati = numarSegmenti * 2;
+ numarTotalFragmentSegmentUtilizat = numarFragmentSegmentUtilizat * 2;
+ numarTraverse = (int)(lungimeTotalaTronson / distantaIntreTraverse * 100 + 0.5 /100.0);
+ numarTotalFragmentSegmenttRamas = numarTotalFragmentSegmentUtilizat;
+
+
+ if (lungimeTotalaTronson <= 0 || lungimeSegment <= 0 || distantaIntreTraverse <= 0)
+ {
+     Console.WriteLine("Operatia imposibila. Introduceti doar valori pozitive sau mari decat 0.");
+ }
+ else
+ {
+     if (lungimeTronsonRamasa > 0)
+     {
+         lungimeTronsonSegmenti++;
+         fragmentSegmentUtilizat = (int)(fragmentSegmentUtilizat * 100 + 0.5) / 100.0;
+         fragmentSegmentRamas = (int)(fragmentSegmentRamas * 100 + 0.5) / 100.0;
+         
+
+     }
+     else if (distantaIntreTraverse > 0) 
+     {
+         numarTraverse = (int)(numarTraverse * 100 + 0.5) / 100.0;
+     }
+     
+      Console.WriteLine($"Pentru tronsonul de {lungimeTotalaTronson} metri vom folosi un numar de {numarSegmenti} segmenti.");
+      Console.WriteLine($"Pentru a acoperi lungimea de tronson ramasa se va folosi un fragment de linie de " +
+            $"{fragmentSegmentUtilizat} metri");                  
+      Console.WriteLine($"Fragmentul de linie ramas neutilizat este de {fragmentSegmentRamas} metri.");
+      Console.WriteLine($"Numarul total de segmenti intregi utilizati este {numarTotalSegmentiUtilizati} bucati.");
+      Console.WriteLine($"Numarul total de fragmente folosite este de {numarTotalFragmentSegmentUtilizat} bucati.");
+      Console.WriteLine($"Numarul total de fragmente de linie ramase neutilizate este de  {numarTotalFragmentSegmenttRamas} bucati.");
+      Console.WriteLine($"Numarul total de traverse folosite este de {numarTraverse} bucati.");
+            
         }
     }
 }
