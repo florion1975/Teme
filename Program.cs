@@ -571,6 +571,81 @@ namespace ProgramPicnic
       Console.WriteLine($"Numarul total de fragmente folosite este de {numarTotalFragmentSegmentUtilizat} bucati.");
       Console.WriteLine($"Numarul total de fragmente de linie ramase neutilizate este de  {numarTotalFragmentSegmenttRamas} bucati.");
       Console.WriteLine($"Numarul total de traverse folosite este de {numarTraverse} bucati.");
+
+
+     string  sumaDeDepus, sumaDeRetras, soldDupaOperatie, dateInvalide;
+     double  sumaDepusa, sumaRetrasa;
+     int optiune, soldInitial;
+     
+     Console.WriteLine("Optiune");
+    
+     Console.WriteLine("1.Depunere");
+     Console.WriteLine("2.Retragere");
+     Console.WriteLine("3.Interogare sold");
+    
+     optiune = int.Parse(Console.ReadLine());
+    
+     soldInitial = 1000;
+     sumaDepusa = 0;
+     sumaRetrasa = 0;
+    
+     sumaDeDepus = "Ati depus suma de ";
+     sumaDeRetras = "Ati retras suma de ";
+     soldDupaOperatie = "Soldul dv este de ";
+     dateInvalide = "Nu puteti introduce sume negative sau egale cu 0";
+    
+     if (optiune == 1)
+     {               
+         Console.WriteLine("Introduceti suma de depus");            
+         sumaDepusa = double.Parse(Console.ReadLine());
+    
+         if (sumaDepusa <= 0)
+         {
+             Console.WriteLine(dateInvalide);
+         }
+         else
+         {
+             Console.WriteLine($"{sumaDeDepus} {sumaDepusa} credite");
+             Console.WriteLine($"{soldDupaOperatie} {soldInitial + sumaDepusa}");
+         }
+    
+     }
+     else if (optiune == 2)
+     {
+        
+         Console.WriteLine("Introduceti suma de retras");
+         sumaRetrasa = double.Parse(Console.ReadLine());
+    
+         if (sumaRetrasa > soldInitial)
+         {
+             Console.WriteLine("Fonduri insuficiente.");
+         }
+         else
+         {
+             if (sumaRetrasa <= 0)
+             {
+                 Console.WriteLine(dateInvalide);
+             }
+             else
+             {
+                 Console.WriteLine($"{sumaDeRetras} {sumaRetrasa} credite.");
+                 Console.WriteLine($"Soldul dv este de {soldInitial - sumaRetrasa}");
+             }
+         }
+     }
+     if (optiune == 3)
+     {
+         Console.WriteLine($"Soldul dv este de {soldInitial + sumaDepusa} credite.");
+     }
+     else
+     {
+         if (optiune < 1 || optiune > 3)
+         {
+             Console.WriteLine("Introduceti o optiune valida oferita in menu.");
+         }
+     }
+    
+
             
         }
     }
