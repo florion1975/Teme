@@ -572,7 +572,7 @@ namespace ProgramPicnic
       Console.WriteLine($"Numarul total de fragmente de linie ramase neutilizate este de  {numarTotalFragmentSegmenttRamas} bucati.");
       Console.WriteLine($"Numarul total de traverse folosite este de {numarTraverse} bucati.");
 
-
+// Tema 4 - Contul Galactic
      string  sumaDeDepus, sumaDeRetras, soldDupaOperatie, dateInvalide;
      double  sumaDepusa, sumaRetrasa;
      int optiune, soldInitial;
